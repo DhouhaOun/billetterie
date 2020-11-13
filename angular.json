@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "billetterie"
+    }
+  },
+  "defaultProject": "billetterie",
+  "cli": {
+    "analytics": false
+  }
 }
