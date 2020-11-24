@@ -1,0 +1,20 @@
+
+<form [formGroup]='editForm' (ngSubmit)='updateTicket()'  novalidate >
+<div >
+  
+ 
+    <div class="form-group">
+      <label for="ticketName"> Name: </label>
+      <input class="form-control"  is="ticketName" placeholder="name" />
+    </div>
+    <div class="form-group">
+      <label for="ticketdesc"> Description: </label>
+      <textarea class="form-control" is="ticketdesc" placeholder="ticketdesc"></textarea>
+    </div>
+  </div>
+    <button class="btn btn-info" >Update ticket</button>
+  </form>
+    <div class="form-group">
+      <button (click)="goBack()">Back</button>
+    </div>
+ 

@@ -1,14 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup ,FormControl,FormBuilder} from '@angular/forms';
 import {Router} from '@angular/router'; 
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class AppComponent {
-  title = 'billetterie';
+export class LoginComponent implements OnInit {
+
+ 
+
+  ngOnInit(): void {
+  }
   showValidation:boolean = true;
   form: FormGroup;
   constructor(private readonly fb: FormBuilder,private route:Router) {
@@ -25,3 +28,4 @@ export class AppComponent {
     }
   }
 }
+

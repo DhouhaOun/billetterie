@@ -1,1 +1,23 @@
-<p>ticket-list works!</p>
+
+  
+
+
+  <table class ="table table-striped" >
+    <tr *ngFor="let tick of  tickets">
+      <td><img class="this-is-a-class" src={{tick.imagePath}}/>  <td></td>
+      <td>{{tick.name |TicketName}}</td>
+      <td>{{tick.description}}</td>
+      <td><button class="btn btn-primary" (click)="onSelect(tick)">Edit</button></td>
+      <td><button class="btn btn-primary" (click)="deleteticket(tick)">delete</button></td>
+    </tr>
+  </table>
+ 
+  
+  
+  <br><br>
+  
+ 
+
+  
+  <br><br>
+      <button class="btn btn-danger" [routerLink]="['/']" routerLinkActive="router-link-active" > Go Back</button>

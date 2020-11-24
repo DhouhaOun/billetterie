@@ -1,0 +1,18 @@
+<h2>Create Ticket</h2>
+
+<form [formGroup]='ticketFormGroup' (ngSubmit)='addTicket()'  novalidate >
+ <input class= "form-control" type="text" formControlName='name' placeholder="Enter Name"   />
+ <input class= "form-control" type="text" formControlName='description' placeholder="Enter description"   />
+
+ <button class= 'btn btn-info'>Add Ticket</button></form>
+
+ <br><br>
+
+ <table class ="table table-striped" >
+    <tr *ngFor="let tick of  tickets">
+      <td><img class="this-is-a-class" src={{tick.imagePath}}/>  <td></td>
+      <td>{{tick.name |TicketName}}</td>
+      <td>{{tick.description}}</td>
+  
+    </tr>
+  </table>
