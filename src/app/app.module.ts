@@ -8,6 +8,7 @@ import {TicketData } from '../app/service/ticket-data';
 import { TicketListComponent } from './home/shared/comps/ticket-list/ticket-list.component';
 import { LoginComponent } from './login/login.component';
 import { TicketService } from './service/ticket-service';
+import { AuthenticationService } from './service/authentication.service';
 import { TicketDetailComponent } from './ticket-detail/ticket-detail.component';
 import {TicketNamePipe} from './pipes/ticketName.pipe';
 import { TicketAddComponent } from './ticket-add/ticket-add.component';
@@ -31,7 +32,7 @@ import {InMemoryWebApiModule} from 'angular-in-memory-web-api';
   ],
 
 
-  providers: [TicketService],
+  providers: [TicketService,AuthenticationService ],
   bootstrap: [AppComponent]
 
   

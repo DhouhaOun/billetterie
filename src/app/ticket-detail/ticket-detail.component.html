@@ -5,11 +5,15 @@
  
     <div class="form-group">
       <label for="ticketName"> Name: </label>
-      <input class="form-control"  is="ticketName" placeholder="name" />
+      <input class="form-control"  id="name" placeholder="name" formControlName="name"  />
     </div>
     <div class="form-group">
       <label for="ticketdesc"> Description: </label>
-      <textarea class="form-control" is="ticketdesc" placeholder="ticketdesc"></textarea>
+      <textarea class="form-control" id="description" placeholder="ticketdesc" formControlName="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="imagePath"> imagePath: </label>
+      <textarea class="form-control" id="imagePath" placeholder="imagePath" formControlName="imagePath" ></textarea>
     </div>
   </div>
     <button class="btn btn-info" >Update ticket</button>
